@@ -6,6 +6,8 @@ let port = 3000;
 
 app.get('/', (req, res) => res.sendfile('public/demo.html'));
 app.get('/rod', (req, res) => res.sendfile('public/RodAnimation.html'));
+app.get('/animal', (req, res) => res.sendfile('public/animal.html'));
+app.get('/data', (req, res) => res.sendfile('public/animal.html'));
 app.listen(port, () => console.log(`Example app listening on port ${port}!`));
 
 
@@ -15,7 +17,6 @@ const client = new MongoClient(uri, {useNewUrlParser: true});
 client.connect(err => {
     const collection = client.db("hackrpi").collection("animal");
     // perform actions on the collection object
-    console.log(collection);
     // collection.insertMany([
     //     {a: 1}, {a: 2}, {a: 3}
     // ], function (err, result) {
