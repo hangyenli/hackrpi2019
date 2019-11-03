@@ -1,0 +1,25 @@
+{
+  "name": "hackrpi2019",
+  "version": "1.0.0",
+  "description": "hackrpi project for me, Daniel and Mo",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hangyenli/hackrpi2019.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hangyenli/hackrpi2019/issues"
+  },
+  "homepage": "https://github.com/hangyenli/hackrpi2019#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongodb": "^3.3.3",
+    "request": "^2.88.0"
+  }
+}
