@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<title>W3.CSS</title>
+<title>Grizzly</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -19,12 +19,10 @@
 
 
 <div class="w3-content w3-display-container mt-4">
-    <img class="mySlides" src="picture/Slide3.JPG" style="max-width:1000px;max-height: 700px">
-    <img class="mySlides" src="picture/Slide2.JPG" style="max-width:1000px;max-height: 700px">
-    <img class="mySlides" src="picture/Slide4.JPG" style="max-width:1000px;max-height: 700px">
-    <img class="mySlides" src="picture/Slide5.JPG" style="max-width:1000px;max-height: 700px">
-    <span><div id="description" class="text-center" style="font-size: 200%;position: relative;bottom: 100px;color: white">1</div>
-</span>
+    <img class="mySlides" src="picture/about.JPG" style="max-width:1000px;max-height: 700px">
+    <img class="mySlides" src="picture/deer.JPG" style="max-width:1000px;max-height: 700px">
+    <img class="mySlides" src="picture/sattelite.JPG" style="max-width:1000px;max-height: 700px">
+    <img class="mySlides" src="picture/map.JPG" style="max-width:1000px;max-height: 700px">
     <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
     <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
 </div>
@@ -38,10 +36,8 @@
 <script>
     var slideIndex = 1;
     showDivs(slideIndex);
-    var description=["1","2","3","4"];
     function plusDivs(n) {
         showDivs(slideIndex += n);
-        changeDescription(slideIndex);
     }
     function changeDescription(n) {
         $("#description").html(description[n-1]);

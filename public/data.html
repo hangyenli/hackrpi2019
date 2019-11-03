@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html>
-<title>W3.CSS</title>
+<title>DATA</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <style>
-    .mySlides {display:none;}
+    .mySlides {
+        display: none;
+    }
 </style>
 <body style="background-color: whitesmoke">
 <div class="container-fluid " style="background-color: black;padding-top: 8px;padding-bottom: 8px">
@@ -17,48 +20,33 @@
     </div>
 </div>
 
-
-<div class="w3-content w3-display-container mt-4">
-    <img class="mySlides" src="picture/Slide3.JPG" style="max-width:1000px;max-height: 700px">
-    <img class="mySlides" src="picture/Slide2.JPG" style="max-width:1000px;max-height: 700px">
-    <img class="mySlides" src="picture/Slide4.JPG" style="max-width:1000px;max-height: 700px">
-    <img class="mySlides" src="picture/Slide5.JPG" style="max-width:1000px;max-height: 700px">
-    <span><div id="description" class="text-center" style="font-size: 200%;position: relative;bottom: 100px;color: white">1</div>
-</span>
-    <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-    <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+<div class="container text-center pt-1">
+    <img id="mongo" src="picture/mongo.png" alt="mongoDB Atlas" height="70">
+</div>
+<div class="row text-center">
+    <div class="col-md-4"><img src="picture/chart.jpg" alt="" height="250" width="400"><span>hh</span></div>
+    <div class="col-md-4"><img src="picture/humid.png" alt="" height="250" width="400"><span>hh</span></div>
+    <div class="col-md-4"><img src="picture/wind.png" alt="" height="250" width="400"><span>hh</span></div>
+</div>
+<br>
+<div class="row text-center">
+    <div class="col-md-4"><img src="picture/temp.png" alt="" height="250" width="400"><span>hh</span></div>
+    <div class="col-md-4"><img src="picture/chart.jpg" alt="" height="250" width="400"><span>hh</span></div>
+    <div class="col-md-4"><img src="picture/chart.jpg" alt="" height="250" width="400"><span>hh</span></div>
 </div>
 
 
-
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
 </body>
 <script>
-    var slideIndex = 1;
-    showDivs(slideIndex);
-    var description=["1","2","3","4"];
-    function plusDivs(n) {
-        showDivs(slideIndex += n);
-        changeDescription(slideIndex);
-    }
-    function changeDescription(n) {
-        $("#description").html(description[n-1]);
-        console.log("2")
-    }
-    function showDivs(n) {
-        var i;
-        var x = document.getElementsByClassName("mySlides");
-        if (n > x.length) {slideIndex = 1}
-        if (n < 1) {slideIndex = x.length}
-        for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";
-        }
-        x[slideIndex-1].style.display = "block";
-    }
-
-
     $("#about").click(function () {
         var win = window.open("/", '_blank');
         win.focus();
@@ -73,6 +61,10 @@
     });
     $("#data").click(function () {
         var win = window.open("/data", '_blank');
+        win.focus();
+    });
+    $("#mongo").click(function () {
+        var win = window.open("https://cloud.mongodb.com/v2/5dbdf338014b76a11a5deeee#metrics/replicaSet/5dbdf47c014b76a183e00fe6/explorer/hackrpi/pastdata/find", '_blank');
         win.focus();
     });
 
